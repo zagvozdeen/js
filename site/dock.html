@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лабораторная №2 — Dock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav aria-label="Навигация"><a href="index.html?v=2">Главная</a> · <a href="grid.html?v=2">Grid</a> · <a href="flex.html?v=2">Flexbox</a> · <a href="dock.html?v=2" aria-current="page">Dock</a></nav>
+  <h1>Лабораторная №2. Знакомство с CSS</h1>
+  <p>Наведите мышь на изображение или выберите его клавишей Tab. Оно увеличится в 1,6 раза, ближайшие соседи — в 1,35 раза, следующие — в 1,15 раза.</p>
+
+  <h2>Горизонтальный Dock</h2>
+  <ul class="dock" aria-label="Горизонтальный ряд изображений">
+    <li class="dock-item" tabindex="0"><img src="images/folder.svg" alt="Папка" width="40" height="40"></li>
+    <li class="dock-item" tabindex="0"><img src="images/browser.svg" alt="Браузер" width="40" height="40"></li>
+    <li class="dock-item" tabindex="0"><img src="images/mail.svg" alt="Почта" width="40" height="40"></li>
+    <li class="dock-item" tabindex="0"><img src="images/music.svg" alt="Музыка" width="40" height="40"></li>
+    <li class="dock-item" tabindex="0"><img src="images/photo.svg" alt="Фотографии" width="40" height="40"></li>
+    <li class="dock-item" tabindex="0"><img src="images/calendar.svg" alt="Календарь" width="40" height="40"></li>
+    <li class="dock-item" tabindex="0"><img src="images/settings.svg" alt="Настройки" width="40" height="40"></li>
+  </ul>
+
+  <h2>Вертикальный Dock</h2>
+  <ul class="dock dock-vertical" aria-label="Вертикальный ряд изображений">
+    <li class="dock-item" tabindex="0"><img src="images/folder.svg" alt="Папка" width="40" height="40"></li>
+    <li class="dock-item" tabindex="0"><img src="images/browser.svg" alt="Браузер" width="40" height="40"></li>
+    <li class="dock-item" tabindex="0"><img src="images/mail.svg" alt="Почта" width="40" height="40"></li>
+    <li class="dock-item" tabindex="0"><img src="images/music.svg" alt="Музыка" width="40" height="40"></li>
+    <li class="dock-item" tabindex="0"><img src="images/photo.svg" alt="Фотографии" width="40" height="40"></li>
+    <li class="dock-item" tabindex="0"><img src="images/calendar.svg" alt="Календарь" width="40" height="40"></li>
+    <li class="dock-item" tabindex="0"><img src="images/settings.svg" alt="Настройки" width="40" height="40"></li>
+  </ul>
+  <p>Оба примера работают только на CSS. Плавность изменения размера задаёт свойство <code>transition</code>.</p>
+</body>
+</html>
