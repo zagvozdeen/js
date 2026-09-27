@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пример Grid</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav aria-label="Навигация"><a href="index.html?v=2">Главная</a> · <a href="flex.html?v=2">Flexbox</a></nav>
+  <h1>Пример Grid</h1>
+  <p>Шесть блоков расположены в три столбца. Между блоками — отступ 12 пикселей.</p>
+  <div class="grid">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+  </div>
+  <pre><code>.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}</code></pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пример Flexbox</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav aria-label="Навигация"><a href="index.html?v=2">Главная</a> · <a href="grid.html?v=2">Grid</a></nav>
+  <h1>Пример Flexbox</h1>
+  <p>Блоки расположены в строку. Если места не хватает, они переносятся на следующую строку.</p>
+  <div class="flex">
+    <div class="box">Первый</div>
+    <div class="box">Второй</div>
+    <div class="box">Третий</div>
+  </div>
+  <pre><code>.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.flex .box {
+  flex: 1 1 160px;
+}</code></pre>
+</body>
+</html>
