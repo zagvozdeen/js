@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лабораторная №4 — Heap</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="lab4.ts"></script>
+</head>
+<body class="algorithms-page">
+  <nav aria-label="Навигация"><a href="index.html?v=2">Главная</a> · <a href="grid.html?v=2">Grid</a> · <a href="flex.html?v=2">Flexbox</a> · <a href="dock.html?v=2">Dock</a> · <a href="algorithms.html?v=2">JavaScript</a> · <a href="heap.html?v=2" aria-current="page">Heap</a></nav>
+  <h1>Лабораторная №4</h1>
+
+  <section aria-labelledby="sort-heading">
+    <h2 id="sort-heading">Пирамидальная сортировка</h2>
+    <form id="sort-form">
+      <input id="numbers" value="8 3 5 1 9 2 9" aria-label="Массив чисел через пробел" placeholder="Числа через пробел">
+      <button type="submit">Сортировать</button>
+    </form>
+    <p class="result" id="sort-result" role="status">Результат появится здесь.</p>
+  </section>
+
+  <section aria-labelledby="top-heading">
+    <h2 id="top-heading">Топ-k сверху и снизу</h2>
+    <form id="top-form">
+      <input id="count" value="3" inputmode="numeric" aria-label="Количество элементов k" placeholder="k">
+      <button type="submit">Найти топ-k</button>
+    </form>
+    <p class="result" id="top-result" role="status">Результат появится здесь.</p>
+  </section>
+
+  <section aria-labelledby="queue-heading">
+    <h2 id="queue-heading">Очередь приоритетов</h2>
+    <form id="queue-form">
+      <select id="queue-type" aria-label="Порядок извлечения">
+        <option value="max">Сначала максимальный</option>
+        <option value="min">Сначала минимальный</option>
+      </select>
+      <input id="queue-value" value="5" inputmode="decimal" aria-label="Число" placeholder="Число">
+      <div class="actions">
+        <button type="submit">Добавить</button>
+        <button type="button" id="dequeue">Извлечь первый</button>
+        <button type="button" id="clear-queue">Очистить</button>
+      </div>
+    </form>
+    <p class="result" id="queue-result" role="status">Куча: []
+Первый: —. Элементов: 0.</p>
+  </section>
+</body>
+</html>

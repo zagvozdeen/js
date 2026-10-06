@@ -125,12 +125,18 @@ pre {
   gap: 8px;
 }
 
-.algorithms-page input, .algorithms-page button {
+.algorithms-page input, .algorithms-page button, .algorithms-page select {
   min-width: 0;
   padding: 8px 12px;
   border: 1px solid #a8c8ed;
   border-radius: 4px;
   font: inherit;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .algorithms-page button {

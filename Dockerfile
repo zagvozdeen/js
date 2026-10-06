@@ -6,7 +6,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY docker-entrypoint.d/15-local-tls.sh /docker-entrypoint.d/15-local-tls.sh
 RUN chmod +x /docker-entrypoint.d/15-local-tls.sh
 
-COPY site/ /usr/share/nginx/html/
+COPY dist/ /usr/share/nginx/html/
 
 EXPOSE 80 443
 

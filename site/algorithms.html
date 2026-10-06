@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Лабораторная №3 — JavaScript</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="module" src="lab3.js"></script>
+    <script type="module" src="lab3.ts"></script>
 </head>
 <body class="algorithms-page">
 <nav aria-label="Навигация"><a href="index.html?v=2">Главная</a> · <a href="grid.html?v=2">Grid</a> · <a
         href="flex.html?v=2">Flexbox</a> · <a href="dock.html?v=2">Dock</a> · <a href="algorithms.html?v=2"
                                                                                  aria-current="page">JavaScript</a>
-</nav>
+ · <a href="heap.html?v=2">Heap</a></nav>
 <h1>Лабораторная №3. Знакомство с JavaScript</h1>
 <noscript>Для выполнения алгоритмов включите JavaScript в браузере.</noscript>
 
@@ -24,7 +24,7 @@
         <button type="submit">Сортировать</button>
     </form>
     <p class="result" id="sort-result" role="status">Результат появится здесь.</p>
-    <p class="complexity">Время: O(n²), для уже отсортированного массива — O(n). Дополнительная память: O(1).</p>
+    <p class="complexity">Время: O(n^2), для уже отсортированного массива — O(n). Дополнительная память: O(1).</p>
 </section>
 
 <section aria-labelledby="search-heading">
@@ -37,7 +37,7 @@
         <button type="submit">Найти</button>
     </form>
     <p class="result" id="search-result" role="status">Результат появится здесь.</p>
-    <p class="complexity">Сам поиск: O(log n) по времени, O(1) по памяти. Вместе с сортировкой: O(n²) в худшем
+    <p class="complexity">Сам поиск: O(log n) по времени, O(1) по памяти. Вместе с сортировкой: O(n^2) в худшем
         случае.</p>
 </section>
 

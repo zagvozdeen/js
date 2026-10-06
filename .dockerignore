@@ -3,5 +3,5 @@
 !nginx.conf
 !docker-entrypoint.d/
 !docker-entrypoint.d/**
-!site/
-!site/**
+!dist/
+!dist/**
