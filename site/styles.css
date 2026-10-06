@@ -115,3 +115,42 @@ pre {
     transition: none;
   }
 }
+
+.algorithms-page section {
+  margin: 28px 0;
+}
+
+.algorithms-page form {
+  display: grid;
+  gap: 8px;
+}
+
+.algorithms-page input, .algorithms-page button {
+  min-width: 0;
+  padding: 8px 12px;
+  border: 1px solid #a8c8ed;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.algorithms-page button {
+  justify-self: start;
+  background: #e5f0ff;
+  cursor: pointer;
+}
+
+.result {
+  padding: 12px;
+  border-radius: 4px;
+  background: #f5f5f5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.result.error {
+  color: #a01e1e;
+}
+
+.complexity {
+  font-size: 14px;
+}

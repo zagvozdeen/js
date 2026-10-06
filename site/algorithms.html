@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Лабораторная №3 — JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="lab3.js"></script>
+</head>
+<body class="algorithms-page">
+<nav aria-label="Навигация"><a href="index.html?v=2">Главная</a> · <a href="grid.html?v=2">Grid</a> · <a
+        href="flex.html?v=2">Flexbox</a> · <a href="dock.html?v=2">Dock</a> · <a href="algorithms.html?v=2"
+                                                                                 aria-current="page">JavaScript</a>
+</nav>
+<h1>Лабораторная №3. Знакомство с JavaScript</h1>
+<noscript>Для выполнения алгоритмов включите JavaScript в браузере.</noscript>
+
+<section aria-labelledby="sort-heading">
+    <h2 id="sort-heading">1. Сортировка вставками</h2>
+    <form id="sort-form">
+        <label for="numbers">Массив чисел через пробел (до 1000 чисел)</label>
+        <input id="numbers" value="8 3 5 1 9 2" aria-describedby="numbers-help">
+        <small id="numbers-help">Дробная часть — через точку. Пустое поле означает пустой массив.</small>
+        <button type="submit">Сортировать</button>
+    </form>
+    <p class="result" id="sort-result" role="status">Результат появится здесь.</p>
+    <p class="complexity">Время: O(n²), для уже отсортированного массива — O(n). Дополнительная память: O(1).</p>
+</section>
+
+<section aria-labelledby="search-heading">
+    <h2 id="search-heading">2. Бинарный поиск</h2>
+    <form id="search-form">
+        <label for="target">Искомое число</label>
+        <input id="target" value="5" inputmode="decimal" aria-describedby="search-help">
+        <small id="search-help">Используется массив выше. Перед поиском он сортируется. Индексы начинаются с нуля; при
+            повторах находится один из них.</small>
+        <button type="submit">Найти</button>
+    </form>
+    <p class="result" id="search-result" role="status">Результат появится здесь.</p>
+    <p class="complexity">Сам поиск: O(log n) по времени, O(1) по памяти. Вместе с сортировкой: O(n²) в худшем
+        случае.</p>
+</section>
+
+<section aria-labelledby="brackets-heading">
+    <h2 id="brackets-heading">3. Баланс скобок</h2>
+    <form id="brackets-form">
+        <label for="brackets">Строка со скобками</label>
+        <input id="brackets" value="({})" spellcheck="false" aria-describedby="brackets-help">
+        <small id="brackets-help">Только ()[]&lt;&gt;{}, без пробелов и других символов. Пустая строка считается
+            сбалансированной.</small>
+        <button type="submit">Проверить</button>
+    </form>
+    <p class="result" id="brackets-result" role="status">Результат появится здесь.</p>
+    <p class="complexity">Стек: O(n) по времени и O(n) по дополнительной памяти в худшем случае.</p>
+</section>
+</body>
+</html>
