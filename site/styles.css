@@ -125,12 +125,16 @@ pre {
   gap: 8px;
 }
 
-.algorithms-page input, .algorithms-page button, .algorithms-page select {
+.algorithms-page input, .algorithms-page button, .algorithms-page select, .algorithms-page textarea {
   min-width: 0;
   padding: 8px 12px;
   border: 1px solid #a8c8ed;
   border-radius: 4px;
   font: inherit;
+}
+
+.algorithms-page textarea {
+  resize: vertical;
 }
 
 .actions {
