@@ -15,15 +15,12 @@
 3. [Лабораторная работа №3](https://docs.google.com/document/d/1wx54ZdTEXXL6ZbeOds6emFof0S0LsDKgME2ZwDnow3I/edit?usp=sharing)
 4. [Лабораторная работа №4](https://docs.google.com/document/d/1O9OSJTeAHLSdjgwxKQ4jtMflrKRRHfJX0Vx984lZYZE/edit?usp=sharing)
 5. [Лабораторная работа №5](https://docs.google.com/document/d/10TYNiU6sok414GHc2jilPpzwFIJyDcBU1Nl-aYCdRTY/edit)
+6. [Лабораторная работа №6](https://docs.google.com/document/d/1xapgDlyeCGcssb9DbF94DmUNnjVam_j56wL9G5b-tSM/edit)
 
 ## Сборка
-
-Нужен Node.js 24+. Фронт собирается локально, Docker копирует готовую папку `dist/`.
 
 ```sh
 npm ci
 npm run build
 docker build -t js-layout-lab:latest .
 ```
-
-После изменения исходников повторить сборку фронта, образа и пересоздать контейнер.

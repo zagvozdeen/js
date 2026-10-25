@@ -1,7 +1,6 @@
 #!/bin/sh
 set -eu
 
-# Certificates are generated per container, never baked into the Docker image.
 cert_dir=/etc/nginx/certs
 mkdir -p "$cert_dir"
 
